@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <PublishAot>true</PublishAot>
+	  <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Beyond.Application.Contracts\Beyond.Application.Contracts.csproj" />
+    <ProjectReference Include="..\Beyond.Application\Beyond.Application.csproj" />
+    <ProjectReference Include="..\Beyond.Classes\Beyond.Classes.csproj" />
+    <ProjectReference Include="..\Beyond.Contracts\Beyond.Contracts.csproj" />
+    <ProjectReference Include="..\Beyond.Repositories\Beyond.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

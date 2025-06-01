@@ -1,0 +1,34 @@
+﻿@Beyond.Web.Api_HostAddress = http://localhost:5197
+
+GET {{Beyond.Web.Api_HostAddress}}/api/todolist
+
+###
+
+POST {{Beyond.Web.Api_HostAddress}}/api/todolist
+Content-Type: application/json
+
+{
+  //TodoItem
+}
+
+###
+
+POST {{Beyond.Web.Api_HostAddress}}/api/todolist
+Content-Type: application/json
+
+{
+  //TodoItem
+}
+
+###
+
+DELETE {{Beyond.Web.Api_HostAddress}}/api/todolist?id=0
+
+###
+
+POST {{Beyond.Web.Api_HostAddress}}/api/todolist?id=0
+Content-Type: application/json
+
+0
+
+###

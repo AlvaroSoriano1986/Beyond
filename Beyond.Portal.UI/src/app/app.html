@@ -1,0 +1,18 @@
+<input type="button" value="Reload todo list" (click)="reload()" />
+
+<ul>
+    <li *ngFor="let item of todoList.items">
+        {{ formatHeader(item) }}
+        <ul *ngIf="item.progressions">
+            <li *ngFor="let progression of item.progressions; index as i">
+                {{ formatProgression(item.progressions, i) }}
+                <mat-progress-bar
+                    style="max-width: 50%;"
+                    class="example-margin"
+                    [mode]="mode"
+                    [value]="getProgressionValue(item.progressions, i)">
+                </mat-progress-bar>
+            </li>
+        </ul>
+    </li>
+</ul>
